@@ -1,0 +1,205 @@
+/* ==UserStyle==
+@name           doggui ChatGPT
+@namespace      github.com/doggui-pack/chagpt
+@version        1.0.0
+@description    Doggui for ChatGPT
+@author         Kerogs
+==/UserStyle== */
+
+:root {
+    --misty-rose: #fde8e4;
+    --light-red: #f6d0d0;
+    --pink-lace: #fbd8f0;
+    --mauve: #d1b3ff;
+    --light-salmon-pink: #f29a9c;
+    --amaranth-pink: #f2aab0;
+    --macaroni-and-cheese: #fbb693;
+    --wheat: #f3d7b1;
+    --granny-smith-apple: #b7e4a1;
+    --pale-robin-egg-blue: #9cdbc9;
+    --non-photo-blue: #a2e2eb;
+    --baby-blue: #89d6ee;
+    --jordy-blue: #9cb6f5;
+    --lavender-blue: #c4c8fb;
+    --azureish-white: #dde3fa;
+    --periwinkle-crayola: #c9d2e9;
+    --light-steel-blue: #b1badb;
+    --blue-bell: #9ea3c1;
+    --cool-grey: #8991ad;
+    --rhythm: #747c99;
+    --dark-electric-blue: #626781;
+    --independence: #4d526b;
+    --charcoal: #3b3f5a;
+    --gunmetal: #2a2e48;
+    --yankees-blue: #232540;
+    --dark-gunmetal: #1a1b2c;
+}
+
+body{
+    background-color:var(--dark-gunmetal)
+}
+
+/* top bar */
+
+.bg-token-main-surface-primary{
+    background-color:var(--yankees-blue);
+    margin:12px;
+    border-radius:12px;
+}
+
+.hover\:bg-token-main-surface-secondary:hover{
+    background-color:var(--gunmetal);
+}
+
+.radix-state-open\:bg-token-main-surface-secondary[data-state="open"]{
+    background-color:var(--gunmetal)
+}
+
+/* Sidebar */
+
+.bg-token-sidebar-surface-primary{
+    background-color:var(--yankees-blue);
+    margin:12px;
+    border-radius:12px;
+}
+
+.dark\:hover\:bg-token-main-surface-secondary:hover:is(.dark *),
+.btn-secondary{
+    background-color:var(--gunmetal);
+}
+
+.btn-secondary:hover{
+    background-color:var(--charcoal);
+}
+
+.ZnJ1aXRqdWljZQ .juice\:bg-token-sidebar-surface-primary{
+    background-color:var(--gunmetal);
+    width:calc(100% - 4px);
+    margin:12px 0;
+    border-left:4px solid var(--mauve);
+}
+
+.hover\:bg-token-sidebar-surface-secondary:hover{
+    background-color:var(--charcoal);
+}
+
+.ltr\:bg-gradient-to-l:where([dir="ltr"], [dir="ltr"] *){
+    background:linear-gradient(to left, var(--yankees-blue), #ff00)
+}
+
+.bg-token-sidebar-surface-secondary{
+    background:var(--gunmetal);
+}
+
+.bg-token-main-surface-tertiary{
+    background:var(--gunmetal);
+}
+
+/* Chat */
+.hover\:bg-token-main-surface-tertiary:hover{
+    background-color:var(--charcoal);
+}
+
+.dark .dark\:bg-token-main-surface-secondary{
+    background-color:var(--yankees-blue);
+}
+
+.rounded-3xl{
+    border-radius:1.3rem 1.3rem 0 1.3rem;
+}
+
+.m-auto {
+    margin: 1%;
+    margin-top: 1%;
+	margin-bottom: 1%;
+}
+  
+.mx-auto .md\:max-w-3xl {
+	max-width: 90% !important;
+}
+
+
+.lg\:max-w-\[40rem\] {
+  max-width: 90% !important;
+}
+
+.py-2.px-3.text-base.md\:px-4.md\:py-5.lg\:px-5.xl\:px-5 {
+   max-width: 90% !important;
+}
+
+@media (min-width: 768px) {
+    .md\:max-w-3xl {
+        max-width: 90% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:max-w-\[40rem\] {
+        max-width: 90% !important;
+    }
+}
+
+.overflow-auto {
+	overflow: clip;
+}
+
+.xl\:max-w-3xl {
+	max-width: 75%;
+ }
+    
+    
+
+/* Chat -> Codebox */
+.border-token-border-medium{
+    border:none;
+}
+
+.bg-token-main-surface-secondary{
+    background-color:var(--independence);
+    color:var(--mauve);
+}
+
+.rounded-t-md{
+    border-radius: 20px 20px 0 0;
+    overflow:hidden;
+}
+
+.rounded-md{
+    border-radius: 20px 20px 0 0;
+}
+
+.overflow-y-auto.p-4{
+    background-color:#131420;
+    padding:1.5rem;
+}
+
+.text-token-text-secondary{
+    color:var(--blue-bell);
+}
+
+.dark\:disabled\:text-token-main-surface-secondary:disabled:is(.dark *){
+    color:var(--yankees-blue);
+}
+
+.disabled\:dark\:bg-token-text-quaternary:is(.dark *):disabled{
+    background-color:var(--dark-gunmetal);
+}
+
+
+.dark .dark\:text-black{
+    color:var(--dark-gunmetal);
+    background-color:var(--granny-smith-apple);
+}
+
+.bg-black{
+    background-color:var(--yankees-blue);
+}
+
+.enabled\:hover\:bg-token-main-surface-secondary:hover:enabled{
+    background-color:var(--yankees-blue);
+}
+
+/* settings */
+.md\:radix-state-active\:bg-token-main-surface-secondary[data-state="active"]{
+    background-color:var(--charcoal);
+}
